@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Peide  Cai | Vision-based Autonomous Car Racing Using Deep Imitative Reinforcement Learning</title>
+<title>Hongji  Liu | V2HDM-Mono: A Framework of Building a Marking-Level HD Map with One or More Monocular Cameras</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -83,7 +83,7 @@
     <div class="container">
       
       <a class="navbar-brand title font-weight-lighter" href="https://caipeide.github.io/">
-       <span class="font-weight-bold">Peide</span>   Cai
+       <span class="font-weight-bold">Hongji</span>   Liu
       </a>
       
       <!-- Navbar Toggle -->
@@ -120,10 +120,10 @@
           
           
           <li class="nav-item ">
-              <a class="nav-link" href="/publications/">
+              <!-- <a class="nav-link" href="/publications/">
                 Publications
                 
-              </a>
+              </a> -->
           </li>
           
           
@@ -159,7 +159,7 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Vision-based Autonomous Car Racing Using Deep Imitative Reinforcement Learning</h1>
+    <h1 class="post-title">V2HDM-Mono: A Framework of Building a Marking-Level HD Map with One or More Monocular Cameras</h1>
     <p class="post-meta"></p>
   </header>
 
@@ -171,7 +171,23 @@
 <h3 id="abstract">Abstract</h3>
 <p style="margin:25px"> </p>
 <p style="text-align:justify; text-justify:inter-ideograph;">
-Autonomous car racing is a challenging task in the robotic control area. Traditional modular methods for this task require accurate mapping, localization and planning, which makes them computationally inefficient and sensitive to environmental changes. Recently, deep-learning-based end-to-end systems have shown promising results for autonomous driving/racing. However, they are commonly implemented by <strong>supervised imitation learning (IL)</strong>, which suffers from the distribution mismatch problem, or by <strong>reinforcement learning (RL)</strong>, which requires a huge amount of risky interaction data. In this work, we present a general deep imitative reinforcement learning approach (DIRL) which successfully achieves agile autonomous racing using visual inputs. The driving knowledge is acquired from both IL and model-based RL, where the agent can learn from human teachers as well as self-improve by safely interacting with an offline world model. We validate our algorithm both in a high-fidelity driving simulation and on a real-world 1/20-scale RC-car with limited onboard computation. The evaluation results demonstrate that our method outperforms previous IL and RL methods in terms of <strong>sample efficiency</strong> and <strong>task performance</strong>.
+Marking-level high-definition maps (HD maps) are
+of great significance for autonomous vehicles, especially in
+large-scale, appearance-changing scenarios where autonomous
+vehicles rely on markings for localization and lanes for safe
+driving. In this paper, we propose a highly feasible framework
+for automatically building a marking-level HD map using a
+simple sensor setup (one or more monocular cameras). We
+optimize the position of the marking corners to fit the result of
+marking segmentation and simultaneously optimize the inverse
+perspective mapping (IPM) matrix of the corresponding camera
+to obtain an accurate transformation from the front view image
+to the bird’s-eye view (BEV). In the quantitative evaluation,
+the built HD map almost attains centimeter-level accuracy. The
+accuracy of the optimized IPM matrix is similar to that of
+the manual calibration. The method can also be generalized
+to build HD maps in a broader sense by increasing the types
+of recognizable markings.
 </p>
 
 <hr />
@@ -180,9 +196,9 @@ Autonomous car racing is a challenging task in the robotic control area. Traditi
 <h3 id="system-architecture">System Architecture</h3>
 <p style="margin:25px"> </p>
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <!-- <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="/assets/autorace-dirl/system.jpg" alt="" title="example image" />
-    </div>
+    </div> -->
 </div>
 
 <hr />
@@ -190,7 +206,7 @@ Autonomous car racing is a challenging task in the robotic control area. Traditi
 <h3 id="video">Video</h3>
 <p style="margin:25px"> </p>
 <center>
-<iframe width="672" height="378" src="https://www.youtube.com/embed/pe0lVfelwwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<!-- <iframe width="672" height="378" src="https://www.youtube.com/embed/pe0lVfelwwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> -->
 </center>
 <hr />
 <p style="margin:25px"> </p>
@@ -199,13 +215,13 @@ Autonomous car racing is a challenging task in the robotic control area. Traditi
 <p style="margin:25px"> </p>
 <div class="caption">
     <!-- https://lyk6756.github.io/2016/11/25/write_latex_equations.html -->
-    \(\uparrow\) means larger numbers are better. \(\downarrow\) means smaller numbers are better. 
+    <!-- \(\uparrow\) means larger numbers are better. \(\downarrow\) means smaller numbers are better. 
     <br />
-    The bold font highlights the best results in each column.
+    The bold font highlights the best results in each column. -->
 </div>
 <p style="margin:-20px"> </p>
 <center>
-<img src="/assets/autorace-dirl/comparative.png" width="450" alt="图片名称" align="center" />
+<!-- <img src="/assets/autorace-dirl/comparative.png" width="450" alt="图片名称" align="center" /> -->
 </center>
 
 <hr />
@@ -214,9 +230,9 @@ Autonomous car racing is a challenging task in the robotic control area. Traditi
 <h3 id="overview-of-the-algorithm">Overview of the Algorithm</h3>
 <p style="margin:25px"> </p>
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <!-- <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="/assets/autorace-dirl/world-model.png" alt="" title="example image" />
-    </div>
+    </div> -->
 </div>
 
 <!-- ---
@@ -250,12 +266,12 @@ Autonomous car racing is a challenging task in the robotic control area. Traditi
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2022 Peide  Cai.
+    &copy; Copyright 2022 Hongji  Liu.
     Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
     
     
-    Last updated: April 01, 2022.
+    Last updated: September 16, 2022.
     
   </div>
 </footer>
