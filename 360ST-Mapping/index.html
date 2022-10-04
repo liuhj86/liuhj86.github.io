@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Hongji  Liu | V2HDM-Mono: A Framework of Building a Marking-Level HD Map with One or More Monocular Cameras</title>
+<title>Hongji  Liu | 360ST-Mapping: An Online Semantics-Guided Topological Mapping Module for Omnidirectional Visual SLAM</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -159,7 +159,7 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">V2HDM-Mono: A Framework of Building a Marking-Level HD Map with One or More Monocular Cameras</h1>
+    <h1 class="post-title">360ST-Mapping: An Online Semantics-Guided Topological Mapping Module for Omnidirectional Visual SLAM</h1>
     <p class="post-meta"></p>
   </header>
 
@@ -171,23 +171,13 @@
 <h3 id="abstract">Abstract</h3>
 <p style="margin:25px"> </p>
 <p style="text-align:justify; text-justify:inter-ideograph;">
-Marking-level high-definition maps (HD maps) are
-of great significance for autonomous vehicles, especially in
-large-scale, appearance-changing scenarios where autonomous
-vehicles rely on markings for localization and lanes for safe
-driving. In this paper, we propose a highly feasible framework
-for automatically building a marking-level HD map using a
-simple sensor setup (one or more monocular cameras). We
-optimize the position of the marking corners to fit the result of
-marking segmentation and simultaneously optimize the inverse
-perspective mapping (IPM) matrix of the corresponding camera
-to obtain an accurate transformation from the front view image
-to the bird’s-eye view (BEV). In the quantitative evaluation,
-the built HD map almost attains centimeter-level accuracy. The
-accuracy of the optimized IPM matrix is similar to that of
-the manual calibration. The method can also be generalized
-to build HD maps in a broader sense by increasing the types
-of recognizable markings.
+Topological map as an abstract representation of the observed environment has the advantage in path planning and navigation. 
+Here we proposed an online topological mapping method, 360ST-Mapping, by making use of omnidirectional vision. 
+The 360° field of view allows the agent to obtain consistent observation and incrementally extract topological environment information. 
+Moreover, we leverage semantic information to guide topological places recognition further improving performance. 
+The topological map possessing semantic information has the potential to support semantics-related advanced tasks. 
+After combining the topological mapping module with the omnidirectional visual SLAM, we conduct extensive experiments in several 
+large-scale indoor scenes to validate the effectiveness.
 </p>
 
 <hr />

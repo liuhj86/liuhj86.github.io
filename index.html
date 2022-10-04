@@ -147,15 +147,15 @@
         <div class="clearfix">
           <p>I am a third-year Ph.D. student at the <a href="https://www.ram-lab.com/">Robotics and Multi-perception Lab</a> in <a href="http://ri.ust.hk/">Robotics Institute</a>, <a href="https://www.ust.hk/">Hong Kong Univerisity of Science and Technology</a>, under the supervision of <a href="https://ece.hkust.edu.hk/eelium">Prof. Ming Liu</a> and <a href="https://cqf.io/">Prof. Qifeng Chen</a>. Before that, I received my bachelor's degree in Software Engineering at Sun Yat-sen University in 2019.</p>
 
-          <p>My research interests mainly include SLAM(Simultaneous Localization and Mapping), topological navigation, high-definition map, autonomous driving, and robotics.</p>
+          <p>My research interests mainly include high-definition map generation, topological navigation, and SLAM(Simultaneous Localization and Mapping), mainly applied to autonomous driving and robotics.</p>
 
           <p><em>Maps</em> play a key role in indoor robots, autonomous vehicles and other robotics derived applications. Maps with complete functions, easy storage and high accuracy are very important for Robot Perception, Localization and Planning. Therefore, I am devoted to exploring efficient and accurate map expression forms applicable to robots in different application scenarios and tasks. It is expected to take the map as the link to help improve the performance of the robot in different application scenarios.</p>
 
         </div>
-        <hr>
+        <!-- <hr> -->
         <!-- News -->
-        <div class="news mt-3 p-0">
-          <h3 class="title mb-4 p-0">News</h3>
+        <!-- <div class="news mt-3 p-0">
+          <h3 class="title mb-4 p-0">News</h3> -->
           <!--div class="row p-0">
             <div class="col-sm-2 p-0">
               <span class="badge danger-color-dark darken-1 font-weight-bold text-uppercase align-middle date ml-3">
@@ -188,7 +188,7 @@
               <p>Successful end to the first <em>HKUST-Kaisa Autonomous RC Car Racing Competition</em> (25 teams, 90+ participants). <a href="https://www.ec.ust.hk/news/successful-end-first-hkust-kaisa-autonomous-rc-car-racing-competition-great-support-kaisa">[News]</a> &amp; <a href="https://github.com/caipeide/autorace">[Code]</a> &amp; <a href="https://drive.google.com/file/d/1r3IwP727UHhTRmrFhijQqkteZpSrXvzW/view?usp=sharing">[Video]</a>. I am the PI of this project.</p>
             </div>
           </div-->
-        </div>
+        <!-- </div> -->
         <hr>
           
         <!-- Publication -->
@@ -201,7 +201,7 @@
                 <div class="col-sm-3">
                   <img class="img-fluid" src="/V2HDM-Mono/pics/main_figure.png">
                 </div>
-                <div id="cai2021dq-gat" class="col-sm-8">
+                <div id="V2HDM-Mono" class="col-sm-8">
             
                   <div class="title">V2HDM-Mono: A Framework of Creating a Marking Level HD Map with One or More Monocular Cameras</div>
                   <div class="author">
@@ -255,25 +255,24 @@
                 </div>
               </div>
             </li>
-            <!-- <li>
             <li>
               <div class="row">
                 <div class="col-sm-3">
-                  <img class="img-fluid" src="/assets/pubimg/dq-gat.jpg">
+                  <img class="img-fluid" src="/360ST-Mapping/pics/teaser.png">
                 </div>
-                <div id="cai2021dq-gat" class="col-sm-8">
+                <div id="360ST-Mapping" class="col-sm-8">
               
-                  <div class="title">DQ-GAT: Towards Safe and Efficient Autonomous Driving with Deep Q-Learning and Graph Attention Networks</div>
+                  <div class="title">360ST-Mapping: An Online Semantics-Guided Topological Mapping Module for Omnidirectional Visual SLAM</div>
                   <div class="author">
-                    <em>Peide Cai</em>,
-                    <a href="https://hlwang1124.github.io/" target="_blank">Hengli Wang</a>,
-                    <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/sun-yuxiang-dr/" target="_blank">Yuxiang Sun</a>,
+                    <em>Hongji Liu</em>,
+                    <a href="https://huajianup.github.io/" target="_blank">Huajian Huang</a>,
+                    <a href="https://www.saikit.org/" target="_blank">Sai-Kit Yeung</a>,
                   
                     and <a href="https://facultyprofiles.ust.hk/profiles.php?profile=ming-liu-eelium#publications" target="_blank">Ming Liu</a>
                   </div>
 
                   <div class="periodical">
-                    <em>Under Review</em>
+                    <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS​)</em>
                     , 2022
                   </div>
               
@@ -282,95 +281,27 @@
               
                   <a class="abstract badge grey waves-effect font-weight-light mr-1" role="button">Abs</a>
               
-                  <a href="https://arxiv.org/pdf/2108.05030.pdf" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">PDF</a>
+                  <!-- <a href="https://arxiv.org/pdf/2108.05030.pdf" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">PDF</a> -->
                     
-                  <a href="/assets/bibliography/dq-gat.txt" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Cite</a>
+                  <!-- <a href="/assets/bibliography/dq-gat.txt" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Cite</a> -->
                   
-                  <a href="/dq-gat" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
+                  <a href="/360ST-Mapping" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
                 
                   </div>
                   
                   <div class="abstract hidden">
-                    <p>Autonomous driving in multi-agent and dynamic traffic scenarios is challenging, where the behaviors of other road agents are uncertain and hard to model explicitly, and the ego-vehicle should apply complicated negotiation skills with them to achieve both safe and efficient driving in various settings, such as yielding, merging and taking turns. Traditional planning methods are largely rule-based and scale poorly in these complex dynamic scenarios, often leading to reactive or even overly conservative behaviors. Therefore, they require tedious human efforts to maintain workability. Recently, deep learning-based methods have shown promising results with better generalization capability but less hand engineering effort. However, they are either implemented with supervised imitation learning (IL) that suffers from the dataset bias and distribution mismatch problems, or trained with deep reinforcement learning (DRL) but focus on one specific traffic scenario. In this work, we propose DQ-GAT to achieve scalable and proactive autonomous driving, where graph attention-based networks are used to implicitly model interactions, and deep Q-learning is employed to train the network end-to-end in an unsupervised manner. Extensive experiments in a high-fidelity driving simulator show that our method achieves higher success rates than previous learning-based methods and a traditional rule-based method, and better trades off safety and efficiency in both seen and unseen scenarios. Moreover, qualitative results on a trajectory dataset indicate that our learned policy can be transferred to the real world for practical applications with real-time speeds.</p>
+                    <p>Topological map as an abstract representation of the observed environment has the advantage in path planning
+                       and navigation. Here we proposed an online topological mapping method, 360ST-Mapping, by making use of 
+                       omnidirectional vision. The 360° field of view allows the agent to obtain consistent observation and incrementally
+                        extract topological environment information. Moreover, we leverage semantic information to guide topological
+                         places recognition further improving performance. The topological map possessing semantic information has the
+                          potential to support semantics-related advanced tasks. After combining the topological mapping module with the 
+                          omnidirectional visual SLAM, we conduct extensive experiments in several large-scale indoor scenes to validate 
+                          the effectiveness.</p>
                   </div>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="row">
-                <div class="col-sm-3">
-                  <img class="img-fluid" src="/assets/pubimg/autorace.gif">
-                </div>
-        
-                <div id="Cai2021vision" class="col-sm-8">
-                  <div class="title">Vision-Based Autonomous Car Racing Using Deep Imitative Reinforcement Learning</div>
-                  <div class="author">
-                    <em>Peide Cai</em>,
-                    <a href="https://hlwang1124.github.io/" target="_blank">Hengli Wang</a>
-                    , Huaiyang Huang, Yuxuan Liu, 
-                    and <a href="https://facultyprofiles.ust.hk/profiles.php?profile=ming-liu-eelium#publications" target="_blank">Ming Liu</a>  
-                  </div>
-
-                  <div class="periodical">
-                    <em>IEEE Robotics and Automation Letters (RA-L) & <br>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS​)</em>
-                    , 2021
-                  </div>
-        
-                  <div class="links">
-          
-                    <a class="abstract badge grey waves-effect font-weight-light mr-1" role="button">Abs</a>
-        
-                    <a href="https://arxiv.org/pdf/2107.08325" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">PDF</a>
-            
-                    <a href="/assets/bibliography/autorace.txt" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Cite</a>
-            
-                    <a href="https://doi.org/10.1109/LRA.2021.3097345" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">DOI</a>
-            
-                    <a href="/autorace-dirl" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
-          
-                  </div>
-
-                  
-                  <div class="abstract hidden">
-                    <p>Autonomous car racing is a challenging task in the robotic control area. Traditional modular methods require accurate mapping, localization and planning, which makes them computationally inefficient and sensitive to environmental changes. Recently, deep-learning-based end-to-end systems have shown promising results for autonomous driving/racing. However, they are commonly implemented by supervised imitation learning (IL), which suffers from the distribution mismatch problem, or by reinforcement learning (RL), which requires a huge amount of risky interaction data. In this work, we present a general deep imitative reinforcement learning approach (DIRL), which successfully achieves agile autonomous racing using visual inputs. The driving knowledge is acquired from both IL and model-based RL, where the agent can learn from human teachers as well as perform self-improvement by safely interacting with an offline world model. We validate our algorithm both in a high-fidelity driving simulation and on a real-world 1/20-scale RC-car with limited onboard computation. The evaluation results demonstrate that our method outperforms previous IL and RL methods in terms of sample efficiency and task performance.</p>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="row">
-                <div class="col-sm-3">
-                  <img class="img-fluid" src="/assets/pubimg/dignet.gif">
-                </div> 
-                <div id="cai2021dignet" class="col-sm-8">  
-                  <div class="title">DiGNet: Learning Scalable Self-Driving Policies for Generic Traffic Scenarios with Graph Neural Networks</div>
-                  <div class="author">
-                    <em>Peide Cai</em>,
-                    <a href="https://hlwang1124.github.io/" target="_blank">Hengli Wang</a>,
-                    <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/sun-yuxiang-dr/" target="_blank">Yuxiang Sun</a>,
-                    and <a href="https://facultyprofiles.ust.hk/profiles.php?profile=ming-liu-eelium#publications" target="_blank">Ming Liu</a>  
-                  </div>
-            
-                  <div class="periodical">
-                    <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS​)</em>
-                    , 2021
-                  </div>
-          
-                  <div class="links">
-                    <a class="abstract badge grey waves-effect font-weight-light mr-1" role="button">Abs</a>
-                    <a href="https://arxiv.org/pdf/2011.06775.pdf" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">PDF</a>
-                    <a href="/assets/bibliography/dignet.txt" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Cite</a>
-                    <a href="/dignet" class="badge grey waves-effect font-weight-light mr-1" role="button" target="_blank">Website</a>
-          
-                  </div>
-
-                  
-                  <div class="abstract hidden">
-                    <p>Traditional modular self-driving frameworks scale poorly in new scenarios, which usually require tedious hand-tuning of rules and parameters to maintain acceptable performance in all foreseeable occasions. Therefore, robust and safe self-driving using traditional frameworks is still challenging, especially in complex and dynamic environments. Recently, deep-learning based self-driving methods have shown promising results with better generalization capability but less hand engineering effort. However, most of the previous learning-based methods are trained and evaluated in limited driving scenarios with scattered tasks, such as lane-following, autonomous braking, and conditional driving. In this paper, we propose a graph-based deep network to achieve scalable self-driving that can handle massive traffic scenarios. Specifically, more than 7,000 km of evaluation is conducted in a high-fidelity driving simulator, in which our method can obey the traffic rules and safely navigate the vehicle in a large variety of urban, rural, and highway environments, including unprotected left turns, narrow roads, roundabouts, and pedestrian-rich intersections. The results also show that our method achieves better performance over the baselines in terms of success rate. </p>
-                  </div>
-                </div>
-              </div>
-            </li> -->
           </ol>
 
         </div>
