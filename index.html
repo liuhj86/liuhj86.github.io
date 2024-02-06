@@ -146,11 +146,11 @@
             <img class="img-fluid z-depth-1 rounded" src="/assets/img/lhj.jpeg">
         </div>
         <div class="clearfix">
-          <p>I am a third-year Ph.D. candidate at the <a href="https://www.ram-lab.com/">Robotics and Multi-perception Lab</a> in <a href="http://ri.ust.hk/">Robotics Institute</a>, <a href="https://www.ust.hk/">Hong Kong Univerisity of Science and Technology</a>, under the supervision of <a href="https://ece.hkust.edu.hk/eelium">Prof. Ming Liu</a> and <a href="https://cqf.io/">Prof. Qifeng Chen</a>. Before that, I received my bachelor's degree in Software Engineering at Sun Yat-sen University in 2019.</p>
+          <p>I am a Ph.D. candidate at the <a href="https://www.ram-lab.com/">Robotics and Multi-perception Lab</a> in <a href="http://ri.ust.hk/">Robotics Institute</a>, <a href="https://www.ust.hk/">Hong Kong Univerisity of Science and Technology</a>, under the supervision of <a href="https://ece.hkust.edu.hk/eelium">Prof. Ming Liu</a> and <a href="https://cqf.io/">Prof. Qifeng Chen</a>. Before that, I received my bachelor's degree in Software Engineering at Sun Yat-sen University in 2019.</p>
 
-          <p>My research interests mainly include high-definition map generation, topological navigation, and SLAM(Simultaneous Localization and Mapping), mainly applied to autonomous driving and robotics.</p>
+          <p>My research interests mainly include high-definition map generation, localization, and SLAM (Simultaneous Localization and Mapping), mainly applied to autonomous driving and robotics.</p>
 
-          <p><em>Maps</em> play a key role in indoor robots, autonomous vehicles and other robotics derived applications. Maps with complete functions, easy storage and high accuracy are very important for Robot Perception, Localization and Planning. Therefore, I am devoted to exploring efficient and accurate map expression forms applicable to robots in different application scenarios and tasks. It is expected to take the map as the link to help improve the performance of the robot in different application scenarios.</p>
+          <p><em>Maps</em> play a key role in indoor robots, autonomous vehicles and other robotics derived applications. Maps with complete functions, easy storage and high accuracy are very important for robot perception, localization and planning. Therefore, I am devoted to exploring efficient and accurate map expression forms applicable to robots in different application scenarios and tasks. It is expected to take the map as the link to help improve the performance of the robot in different application scenarios.</p>
 
         </div>
         <!-- <hr> -->
@@ -204,13 +204,14 @@
                 </div>
                 <div id="V2HDM-Mono" class="col-sm-8">
             
-                  <div class="title">V2HDM-Mono: A Framework of Creating a Marking Level HD Map with One or More Monocular Cameras</div>
+                  <div class="title">PGO-IPM: Enhance IPM Accuracy with Pose-guided Optimization for Low-cost High-definition Angular Marking Map Generation</div>
                   <div class="author">
                     <em>Hongji Liu</em>,
                     <em>Linwei Zheng</em>,
                     <em>Xiaoyang Yan</em>,
-                    <em>Bohuan Xue</em>,
                     <em>Zhenhua Xu</em>,
+                    <em>Bohuan Xue</em>,
+                    <em>Yang Yu</em>,
                     <!-- <a href="https://hlwang1124.github.io/" target="_blank">Hengli Wang</a>,
                     <a href="https://www.polyu.edu.hk/me/people/academic-teaching-staff/sun-yuxiang-dr/" target="_blank">Yuxiang
                       Sun</a>, -->
@@ -220,7 +221,7 @@
             
                   <div class="periodical">
                     <em>Under Review</em>
-                    , 2023
+                    , 2024
                   </div>
             
             
@@ -240,17 +241,16 @@
                   </div>
             
                   <div class="abstract hidden">
-                    <p>Marking-level high-definition maps (HD maps) are of great significance for autonomous vehicles, 
-                      especially in large-scale, appearance-changing scenarios where autonomous vehicles rely on markings
-                      for localization and lanes for safe driving. In this paper, we propose a highly feasible framework
-                      for automatically creating a marking-level HD map using a simple sensor setup (one or more monocular cameras).
-                      We optimize the position of the marking corners to fit the result of marking segmentation and simultaneously
-                      optimize the inverse perspective mapping (IPM) matrix of the corresponding camera to obtain an accurate 
-                      transformation from the front view image to the bird's-eye view (BEV). 
-                      In the quantitative evaluation, the created HD map almost attained centimeter accuracy. 
-                      The accuracy of the optimized IPM matrix is similar to that of the manual calibration. 
-                      The method can also be generalized to create HD maps in a broader sense by increasing
-                      the types of recognizable markings.
+                    <p>High-definition angular marking maps (HDAM maps) are vital in large-scale environments with variable appearances. In
+                    these scenarios, unmanned ground vehicles (UGVs) can use angular markings for localization because they are easy to
+                    identify and informative for localization. However, creating such a marking map relies heavily on manual measurement and
+                    annotation, which is time-consuming and laborious. Although Inverse Perspective Mapping (IPM) offers a low-cost and
+                    automated alternative, its accuracy is compromised by vehicle motion and the arduous pre-calibration of the IPM matrix.
+                    To fill these gaps, we propose a pose-guided optimization framework for IPM. This framework enables the automated
+                    generation of HDAM maps, while concurrently refining the preliminary IPM matrix. We deployed the proposed method in two
+                    different automated ports, and the method yielded HDAM maps with near-centimeter precision. Moreover, the refined IPM
+                    matrix matched the accuracy of manual calibrations. The supplementary materials and videos are available at
+                    http://liuhongji.site/V2HDM-Mono/.
                     </p>
                   </div>
                 </div>

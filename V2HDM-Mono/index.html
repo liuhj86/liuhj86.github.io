@@ -159,7 +159,7 @@
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Monocular Camera Mapping with Pose-Guided Optimization: Enhancing Marking-Level HD Map Accuracy</h1>
+    <h1 class="post-title">PGO-IPM: Enhance IPM Accuracy with Pose-guided Optimization for Low-cost High-definition Angular Marking Map Generation</h1>
     <p class="post-meta"></p>
   </header>
 
@@ -171,20 +171,16 @@
 <h3 id="abstract">Abstract</h3>
 <p style="margin:25px"> </p>
 <p style="text-align:justify; text-justify:inter-ideograph;">
-Marking-level high-definition maps (HD maps) are of great significance 
-for autonomous vehicles (AVs), especially in large-scale, appearance-changing 
-scenarios where AVs rely on markings for localization and lanes for safe driving. 
-In this paper, we propose a pose-guided optimization framework for automatically 
-building a marking-level HD map with accurate markings positions using a simple 
-sensor setup (one or more monocular cameras). We optimize the position of the 
-marking corners to fit the result of marking segmentation and simultaneously 
-optimize the inverse perspective mapping (IPM) matrix of the corresponding camera 
-to obtain an accurate transformation from the front view image to the bird's-eye 
-view (BEV). In the quantitative evaluation, the built HD map almost attains 
-centimeter-level accuracy. The accuracy of the optimized IPM matrix is similar 
-to that of the manual calibration. The method can also be generalized to build 
-HD maps in a broader sense by increasing the types of recognizable markings. 
-The supplementary materials and videos are available at http://liuhongji.site/V2HDM-Mono/.
+High-definition angular marking maps (HDAM maps) are vital in large-scale environments with variable appearances. In
+these scenarios, unmanned ground vehicles (UGVs) can use angular markings for localization because they are easy to
+identify and informative for localization. However, creating such a marking map relies heavily on manual measurement and
+annotation, which is time-consuming and laborious. Although Inverse Perspective Mapping (IPM) offers a low-cost and
+automated alternative, its accuracy is compromised by vehicle motion and the arduous pre-calibration of the IPM matrix.
+To fill these gaps, we propose a pose-guided optimization framework for IPM. This framework enables the automated
+generation of HDAM maps, while concurrently refining the preliminary IPM matrix. We deployed the proposed method in two
+different automated ports, and the method yielded HDAM maps with near-centimeter precision. Moreover, the refined IPM
+matrix matched the accuracy of manual calibrations. The supplementary materials and videos are available at
+http://liuhongji.site/V2HDM-Mono/.
 </p>
 
 <hr />
@@ -194,7 +190,7 @@ The supplementary materials and videos are available at http://liuhongji.site/V2
 <p style="margin:25px"> </p>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="pics/system_overview3.png" alt="" title="example image" />
+        <img class="img-fluid rounded z-depth-1" src="pics/system_overview5.png" alt="" title="example image" />
     </div>
 </div>
 
